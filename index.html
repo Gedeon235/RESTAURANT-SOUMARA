@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurant Libanais Soumara à Moundou, Tchad. Découvrez nos spécialités libanaises et tchadiennes, réservez une table en ligne.">
+    <title>Restaurant Libanais Soumara - Moundou, Tchad</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="#" class="nav-logo">
+                    <img src="./assets/soumara.png" alt="Restaurant Soumara" class="logo-img">
+                    <span></span>
+                </a>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#accueil" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#reservation" class="nav-link reservation-btn">Réserver</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section Hero / Accueil -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Restaurant Libanais Soumara</h1>
+            <p class="hero-subtitle">Saveurs authentiques du Liban au cœur de Moundou</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Découvrir le menu</a>
+                <a href="#reservation" class="btn btn-secondary">Réserver une table</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Introduction -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-text">
+                    <h2>Bienvenue au Restaurant Soumara</h2>
+                    <p>Plongez dans un monde de saveurs où l’authenticité libanaise se marie avec finesse aux richesses culinaires du Tchad. Chez Soumara, chaque plat raconte une histoire, chaque recette est un hommage au goût, à la générosité et à la passion.</p>
+                    <p>Notre chef vous invite à un véritable voyage sensoriel, en cuisinant avec des ingrédients soigneusement sélectionnés, toujours frais et de qualité supérieure. Des mezzés parfumés aux grillades exquises, en passant par nos douceurs orientales, tout est préparé avec amour et savoir-faire..</p>
+                     <p>Venez vivre une expérience culinaire inoubliable dans une ambiance à la fois chaleureuse, élégante et familiale. Que vous soyez de passage ou un fidèle habitué, Soumara vous ouvre ses portes pour un moment de pur plaisir et de découverte.</p>
+                     <p class="text-lg md:text-xl">
+  Que vous soyez un fidèle client ou en quête d’une nouvelle adresse, <span class="font-semibold">venez savourer des moments chaleureux</span> dans un cadre accueillant,
+  familial et raffiné. <br class="hidden md:block" />
+  <strong class="text-red-600">Soumara</strong>, c’est plus qu’un restaurant : c’est un lieu de rencontre, de partage et d’émotions autour de la bonne cuisine.
+</p>
+                    
+                </div>
+                <div class="intro-image">
+                    <img src="./assets/bienvenue.jpeg" alt="Intérieur du restaurant Soumara">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Spécialités -->
+    <section class="specialties">
+        <div class="container">
+            <h2>Nos spécialités</h2>
+            <div class="specialties-grid">
+                <div class="specialty-card">
+                    <div class="specialty-image">
+                        <img src="./assets/mezze.jpeg" alt="Assortiment de mezzés libanais">
+                    </div>
+                    <h3>Mezzés Libanais</h3>
+                    <p>Une sélection de hors-d'œuvre traditionnels : houmous, taboulé, baba ganoush et bien plus.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-image">
+                        <img src="./assets/grillet.jpeg" alt="Plateau de grillades">
+                    </div>
+                    <h3>Grillades</h3>
+                    <p>Viandes marinées et grillées au charbon de bois selon les techniques ancestrales.</p>
+                </div>
+                <div class="specialty-card">
+                    <div class="specialty-image">
+                        <img src="./assets/dessserts.jpeg" alt="Desserts orientaux">
+                    </div>
+                    <h3>Pâtisseries Orientales</h3>
+                    <p>Baklava, knafeh et autres douceurs sucrées pour terminer votre repas en beauté.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Menu -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Notre Menu</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">Tout</button>
+                <button class="filter-btn" data-category="entrees">Entrées</button>
+                <button class="filter-btn" data-category="plats">Plats Principaux</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+                <button class="filter-btn" data-category="boissons">Boissons</button>
+            </div>
+            <div class="menu-items">
+                <!-- Les éléments du menu seront chargés dynamiquement par JavaScript -->
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Section Galerie -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Galerie</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./assets/plat libanais.jpeg" alt="Plat libanais">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets//interieur.jpeg" alt="Intérieur du restaurant">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/plats.jpeg" alt="Préparation des plats">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/clients.jpeg" alt="Client heureux">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/even.webp" alt="Événement au restaurant">
+                </div>
+                <div class="gallery-item">
+                    <img src="./assets/dessert2.jpeg" alt="Dessert">
+                </div>
+                 <div class="gallery-item">
+                    <img src="./assets/nauveaute.jpeg" alt="nouveaute">
+                </div>
+                 <div class="gallery-item">
+                    <img src="./assets/decouverte.jpeg" alt="Decouverte">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section À propos -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>À propos de nous</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Notre histoire</h3>
+                    <p>Fondé en 2010, le Restaurant Soumara est rapidement devenu une institution culinaire à Moundou. Notre fondateur, passionné de cuisine libanaise, a voulu partager les saveurs authentiques de son pays natal avec la communauté tchadienne.</p>
+                    <p>Aujourd'hui, notre équipe de chefs talentueux perpétue cette tradition en créant des plats qui marient harmonieusement les influences libanaises et tchadiennes, le tout préparé avec des ingrédients frais et locaux.</p>
+                    <h3>Notre philosophie</h3>
+                    <p>Chez Soumara, nous croyons que la nourriture est bien plus qu'une simple nécessité - c'est un art, une culture, et une manière de rassembler les gens. Chaque plat que nous servons raconte une histoire et est préparé avec amour et attention.</p>
+                </div>
+                <div class="about-image">
+                    <img src="./assets/equipe.png" alt="Équipe du restaurant Soumara">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Témoignages -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>Ce que disent nos clients</h2>
+            <div class="testimonials-slider">
+                <div class="testimonial active">
+                    <div class="testimonial-content">
+                        <p>"Le meilleur restaurant libanais de Moundou ! Les mezzés sont délicieux et l'accueil est toujours chaleureux. Je recommande vivement !"</p>
+                        <div class="testimonial-author">
+                            <span>M. OBI YOUNOUSS MAHAMAT</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"Une découverte extraordinaire. Les saveurs authentiques du Liban avec une touche locale. Le service est impeccable et les prix très raisonnables."</p>
+                        <div class="testimonial-author">
+                            <span>Dr PESSEM GEDEON</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <p>"L'endroit parfait pour un dîner en famille ou entre amis. L'ambiance est conviviale et les plats sont toujours excellents. Mention spéciale pour les desserts !"</p>
+                        <div class="testimonial-author">
+                            <span>M DJEDANOUM JOSUE</span>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <button class="control-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="control-btn next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Réservation -->
+    <section id="reservation" class="reservation">
+        <div class="container">
+            <h2>Réservez votre table</h2>
+            <div class="reservation-content">
+                <div class="reservation-form">
+                    <form id="booking-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Heure</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Nombre de personnes</label>
+                            <select id="guests" name="guests" required>
+                                <option value="1">1 personne</option>
+                                <option value="2">2 personnes</option>
+                                <option value="3">3 personnes</option>
+                                <option value="4">4 personnes</option>
+                                <option value="5">5 personnes</option>
+                                <option value="6">6 personnes</option>
+                                <option value="7+">7+ personnes</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message spécial (optionnel)</label>
+                            <textarea id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Réserver maintenant</button>
+                    </form>
+                </div>
+                <div class="reservation-info">
+                    <h3>Horaires d'ouverture</h3>
+                    <ul class="opening-hours">
+                        <li><span>Lundi - Jeudi:</span> 11h - 22h</li>
+                        <li><span>Vendredi - Samedi:</span> 11h - 23h</li>
+                        <li><span>Dimanche:</span> 12h - 21h</li>
+                    </ul>
+                    <div class="contact-info">
+                        <h3>Contact</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Avenue du Général, Moundou, Tchad</p>
+                        <p><i class="fas fa-phone"></i> +235 68 65 57 86</p>
+                        <p><i class="fab fa-whatsapp"></i> +235 60 35 76 94</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informations de contact</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Adresse:</strong> Avenue du Général, Moundou, Tchad</p>
+                    <p><i class="fas fa-phone"></i> <strong>Téléphone:</strong> +235 68 65 57 86</p>
+                    <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp:</strong> +235 60 35 76 94</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> contact@soumara.td</p>
+                    
+                    <div class="social-links">
+                        <h3>Suivez-nous</h3>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Nom complet</label>
+                            <input type="text" id="contact-name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-subject">Sujet</label>
+                            <input type="text" id="contact-subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message</label>
+                            <textarea id="contact-message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                    </form>
+                </div>
+                <div class="map">
+                    <h3>Nous trouver</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1972.7083775702386!2d16.0717511912413!3d8.555862491487757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10e73f6aad0cf8b9%3A0x5f5dc8639376ad9a!2sAlimentation%20et%20Restaurant%20SOUMARA!5e0!3m2!1sfr!2std!4v1756256403467!5m2!1sfr!2std"
+                    width="600"
+                    height="450"
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Restaurant Soumara</h3>
+                    <p>Saveurs authentiques du Liban au cœur de Moundou, Tchad.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Liens rapides</h4>
+                    <ul>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Horaires</h4>
+                    <ul>
+                        <li>Lun-Jeu: 11h - 22h</li>
+                        <li>Ven-Sam: 11h - 23h</li>
+                        <li>Dim: 12h - 21h</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Avenue du Général, Moundou</li>
+                        <li><i class="fas fa-phone"></i> +235 68 65 57 86</li>
+                        <li><i class="fas fa-envelope"></i> contact@soumara.td</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Restaurant Soumara. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
